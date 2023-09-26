@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+            border-right: 1px solid #bbb;
+        }
+
+        li:last-child {
+            border-right: none;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+
+        }
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+h2 {
+    text-align: center;
+}
+h4{
+    text-align: center;
+}
+h3{
+     text-align: center;
+}
+h6{
+     text-align: center;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("img_girl.jpg");
+
+  /* Full height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+p {
+    text-align: center;
+    background-color: grey;
+    padding: 30px;
+}
+</style>
+    
+</head>
+
+<body>
+
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+        <li style="float:right"><a href="#Log In">Log In</a></li>
+        <li style="float:right"><a href="#Alert Login">Alert Login</a></li>
+        <li style="float:right"><a href="#Buses">Buses</a></li>
+    <li style="float:right"><a href="Hotels">Hotels</a></li>
+    <li style="float:right"><a href="#Holidyas">Holidays</a></li>
+    <li style="float:right"><a href="#Flights">Flights</a></li>
+    <li style="float:right"><a href="#Meals">Meals</a></li>
+    
+    </ul>
+    
+
+<h2>Book Ticket</h2>
+
+<div class="row">
+    <div class="col-75">
+        <div class="container">
+            <form action="/action_page.php">
+
+                <div class="row">
+                    <div class="col-50">
+                        <h3>PNR STATUS</h3>
+                        <label for="from"><i class="fa fa-user"></i> From</label>
+                        <input type="text" id="from" name="from" placeholder="Select here">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="text" id="To" name="To" placeholder="To">
+                        <label for="General"><i class="General"></i> General</label>
+                        <input type="text" id="General" name="General" placeholder="General">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder="New York">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="NY">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="10001">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+                        <label for="fname">Accepted Cards</label>
+                        <div class="icon-container">
+                            <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <i class="fa fa-cc-discover" style="color:orange;"></i>
+                        </div>
+                        <label for="cname">Name on Card</label>
+                        <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                        <label for="ccnum">Credit card number</label>
+                        <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                        <label for="expmonth">Exp Month</label>
+                        <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="expyear">Exp Year</label>
+                                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                            </div>
+                            <div class="col-50">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" name="cvv" placeholder="352">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <label>
+                    
+                    
+                    
+                    
+                    <input type="checkbox" checked="checked" name="sameadr">Flexible With Date
+                    <input type="checkbox" checked="checked" name="sameadr">Trail with available berth
+                    <input type="checkbox" checked="checked" name="sameadr">Railway Pass Concession
+                    <input type="checkbox" checked="checked" name="sameadr">Person with Disability Concession
+                </label>
+                <input type="submit" value="Try Booking in Ask Disha 2.0" class="btn">
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+
+<script>
+    function myFunction() {
+        var checkBox = document.getElementById("myCheck");
+        var text = document.getElementById("text");
+        if (checkBox.checked == true) {
+            text.style.display = "block";
+        } else {
+            text.style.display = "none";
+        }
+    }
+</script>
+
+<h4 style="color: red;">Users are advised to download Official ‘IRCTC Rail Connect’ Apps only from Google Play Store or Apple App Store.</h4>
+    <h3 style="color: red;">Please do not use unauthorized links/URLs.</h3>
+<h6 style="color: blue;">Please check the alert section regarding restoration of AC 3-tier economy fare.</h6>
+<div class="bg"></div>
+
+<h1>Have you not found the right one?</h1>
+<p>Find a service suitable for you here.</p>
+<div class="row">
+<i class="fa fa-train"></i>
+<i class="fa fa-train" style="font-size:50px"></i>
+<i class="fa fa-train" style="font-size:100px;"></i>
+<i class="fa fa-train" style="font-size:150px;color:red" align="center"></i>
+<i class="fa fa-train"></i>
+<i class="fa fa-train" style="font-size:50px"></i>
+<i class="fa fa-train" style="font-size:100px;"></i>
+<i class="fa fa-train" style="font-size:150px;color:blue" align="center"></i>
+<i class="fa fa-train"></i>
+<i class="fa fa-train" style="font-size:50px"></i>
+<i class="fa fa-train" style="font-size:100px;"></i>
+<i class="fa fa-train" style="font-size:150px;color:brown" align="center"></i>
+<i class="fa fa-train"></i>
+<i class="fa fa-train" style="font-size:50px"></i>
+<i class="fa fa-train" style="font-size:100px;"></i>
+<i class="fa fa-train" style="font-size:150px;color:gray" align="center"></i>
+<i class="fa fa-train"></i>
+<i class="fa fa-train" style="font-size:50px"></i>
+<i class="fa fa-train" style="font-size:100px;"></i>
+<i class="fa fa-train" style="font-size:150px;color:green" align="center"></i>
+</div>
+<h2>HOLIDAYS</h2>
+
+<div class="row">
+    <div class="column">
+        <img src="A.png" alt="Snow" style="width:100%" >
+        
+    </div>
+    <div class="column">
+        <img src="B.jpg" alt="Forest" style="width:100%">
+    </div>
+    <div class="column">
+        <img src="C.jpg" alt="Mountains" style="width:100%">
+    </div>
+</div>
+
+<div class="w3-row-padding">
+    <div class="w3-third">
+        <h2>IRCTC Trains</h2>
+        <p>General Information</p>
+        <p>Important Information</p>
+        
+        <p>Person With Disability Facilities</p>
+        <p>Refund Rules</p>
+        
+    </div>
+    
+<p>All Rights are Reserved 2023.</p>
+</body>
+
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Netflix Homepage</title>
+</head>
+
+<body>
+    <style>
+
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the header */
+header {
+    background-color:none;
+    color: black;
+    padding: 20px;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    
+}
+
+.nav-links a:hover {
+    color: red;
+}
+
+
+/* Styles for the featured section */
+.featured {
+    background-color:grey;
+    color: white;
+    padding: 80px;
+}
+
+
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    padding: 80px;
+}
+
+
+h2{
+    text-align: center;
+    background-color: #f1f1f1;
+
+}
+
+
+h3{
+    text-align: center;
+}
+button{
+    padding: 15px 30px;
+    background-color: #e50914;
+border-radius: 50px;
+
+}
+
+.email-section {
+    background-color: #f3f3f3;
+    padding: 40px;
+    text-align: center;
+}
+
+.email-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.email-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 300px;
+}
+
+.email-form button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.email-form button:hover {
+    background-color: #b2070e;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("notebook.jpg");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: black;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+h4{
+    text-align: left;
+    font-size:80px ;
+}
+h5{
+    font-size: 30px;
+}
+h6{
+    text-align: center;
+    font-size: 80px;
+    text-decoration: white;
+}
+h7{
+    text-align: middle;
+    font-size: 30px;
+    text-decoration: white;
+    background-color: black;
+    border-radius: 20px;
+  
+}
+
+
+    </style>
+    <header>
+<nav class="navbar">
+    <div class="logo">Netflix</div>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">TV Shows</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="#">My List</a></li>
+    </ul>
+    <button class="onclick">Sign In</button>
+</nav>
+        <h1>Unlimited movies, TV shows and more!</h1>
+<div class="bg-img">
+<h2>Watch anywhere.Cancel Anytime.</h2>
+<h3>Ready to watch?Enter your email to create or resart your membership.</h3>
+    
+    </header>
+    
+    <section class="email-section">
+        
+        <div class="email-form">
+            <input type="email" placeholder="Your email address">
+            <button type="submit">Get Started</button>
+        </div>
+        
+    </section>
+    <body style="background-color:grey;"></body>
+    
+    <section class="featured">
+        <h4>Watch on your TV</h4>
+        <h5>Watch on smart TVs, PlayStation, Xbox, 
+            <p>Chromecast, Apple TV, Blu-ray players 
+                </p></h5>
+                <iframe width="370" height="300" align="right" 
+                src="https://www.any-video-converter.com/resources/download-videos-from-netflix.html">
+                </iframe>
+                <iframe width="400" height="300" align="right" src="https://pastedownload.com/netflix-downloader/">
+                </iframe>
+                <iframe width="370" height="300" align="right" src="https://www.flixgrab.com/">
+                </iframe>
+    </section>
+    
+    
+    </div>
+    </div>
+</body>
+
+</html>
